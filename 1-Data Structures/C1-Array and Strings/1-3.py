@@ -19,4 +19,10 @@ def ispermut(word, test):
 		return False
 	return True
 
-print ispermut("google", "ogloeg")
+def ispermut2(word, test):
+	return sorted(word) == sorted(test)
+
+word = "google"
+test = "ogloeg"
+print ispermut(word, test)
+print ispermut2(word, test)
